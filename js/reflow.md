@@ -2,6 +2,8 @@
 
 ```js
 function reflow(element) {
-  void element.clientWidth
+  void (element || document.documentElement).offsetWidth
 }
 ```
+
+speed https://jsperf.com/reflow-speed
