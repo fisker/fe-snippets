@@ -37,7 +37,7 @@ var isArray = Array.isArray ||
 
 var flattenDeep = function flattenDeep(arr) {
   return reduce.call(arr, function(acc, current) {
-    return acc.concat(Array.isArray(current) ? flatten(current) : current)
+    return acc.concat(isArray(current) ? flatten(current) : current)
   }, [])
 }
 ```
