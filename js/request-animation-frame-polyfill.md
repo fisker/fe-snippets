@@ -1,5 +1,7 @@
 # requestAnimationFrame polyfill
 
+** there is no ms/o verdor prefix **
+
 ```js
 var requestAnimationFrame = window.requestAnimationFrame ||
   window.mozRequestAnimationFrame ||
@@ -7,12 +9,4 @@ var requestAnimationFrame = window.requestAnimationFrame ||
   function (callback) {
     return window.setTimeout(callback, 16)
   }
-```
-
-```js
-var cancelAnimationFrame = window.cancelAnimationFrame ||
-  window.mozCancelAnimationFrame ||
-  window.webkitCancelAnimationFrame ||
-  window.webkitCancelRequestAnimationFrame ||
-  window.clearTimeout
 ```
