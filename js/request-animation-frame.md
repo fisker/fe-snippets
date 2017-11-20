@@ -1,4 +1,4 @@
-# requestAnimationFrame polyfill
+# requestAnimationFrame
 
 ** there is no ms/o verdor prefix **
 

@@ -1,5 +1,4 @@
-# cancelAnimationFrame polyfill
-
+# cancelAnimationFrame
 ** there is no ms/o verdor prefix **
 
 ```js
