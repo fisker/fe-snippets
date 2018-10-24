@@ -27,15 +27,11 @@ var descartes = (function() {
 
   function descartes(collection) {
     collection = collection || []
-    collection = collection.filter(filter)
+    collection = collection.filter(filter).map(transform)
 
-    if (!collection.length) {
-      return []
-    }
-
-    collection = collection.map(transform)
-
-    return collection.reduce(compile)
+    return collection.length
+      ? collection.reduce(compile)
+      : []
   }
 
   return descartes
